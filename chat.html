@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chat UI</title>
+  <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- LEFT SIDEBAR -->
+  <div class="sidebar">
+
+    <div class="sidebar-header">
+      <h3>Chats</h3>
+    </div>
+
+    <div class="search">
+      <input type="text" placeholder="Search or start new chat">
+    </div>
+
+    <div class="add-contact">
+       <input type="text" id="newContact" placeholder="Enter contact number">
+       <button id="addBtn">Add</button>
+    </div>
+
+    <!-- IMPORTANT: Keep empty -->
+    <div class="chat-list"></div>
+
+  </div>
+
+  <!-- RIGHT CHAT AREA -->
+  <div class="chat-area">
+
+    <!-- HEADER -->
+    <div class="chat-header">
+      <div>
+        <h4 id="chatName">Select a chat</h4>
+        <span id="userphone"></span>
+      </div>
+    </div>
+
+    <!-- MESSAGES -->
+    <div class="messages"></div>
+
+    <!-- INPUT -->
+    <div class="input-box">
+      <input type="text" id="messageInput" placeholder="Type a message">
+      <button id="sendBtn">Send</button>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="chat.js"></script>
+</body>
+</html>

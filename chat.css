@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+html, body {
+  height: 100%;
+  background: #0b141a;
+}
+
+/* APP LAYOUT */
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 30%;
+  background: #111b21;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-header {
+  padding: 15px;
+  font-size: 18px;
+}
+
+.search {
+  padding: 10px;
+}
+
+.search input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 20px;
+  border: none;
+  background: #202c33;
+  color: white;
+}
+
+.chat-list {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.chat-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.chat-item:hover,
+.chat-item.active {
+  background: #202c33;
+}
+
+.chat-info {
+  flex: 1;
+}
+
+.chat-info h4 {
+  font-size: 14px;
+  color: white;
+}
+
+.chat-info p {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.chat-item .time {
+  font-size: 11px;
+  color: #aaa;
+}
+
+/* CHAT AREA */
+.chat-area {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  background: #0b141a;
+}
+
+/* HEADER */
+.chat-header {
+  background: #202c33;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.chat-header h4 {
+  font-size: 16px;
+}
+
+.chat-header span {
+  font-size: 12px;
+  color: #aaa;
+}
+
+/* MESSAGES */
+.messages {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+}
+
+.msg {
+  max-width: 60%;
+  padding: 8px 12px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  border-radius: 8px;
+  position: relative;
+  word-wrap: break-word;
+}
+
+.msg span {
+  display: block;
+  font-size: 10px;
+  margin-top: 4px;
+  color: #ddd;
+  text-align: right;
+}
+
+.received {
+  background: #202c33;
+  color: white;
+}
+
+.sent {
+  background: #005c4b;
+  color: white;
+  margin-left: auto;
+}
+
+/* INPUT AREA */
+.input-box {
+  display: flex;
+  padding: 10px;
+  background: #202c33;
+  align-items: center;
+}
+
+.input-box input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  background: #2a3942;
+  color: white;
+  outline: none;
+  font-size: 14px;
+}
+
+.input-box button {
+  margin-left: 10px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  background-color: #0084ff;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.input-box button:hover {
+  background-color: #006fd6;
+}
+
+.input-box button:active {
+  transform: scale(0.95);
+}
+
+/* ADD CONTACT SECTION */
+.add-contact {
+  display: flex;
+  padding: 10px;
+  gap: 5px;
+}
+
+.add-contact input {
+  flex: 1;
+  padding: 6px;
+  border-radius: 5px;
+  border: none;
+  background: #202c33;
+  color: white;
+}
+
+.add-contact button {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 5px;
+  background: #005c4b;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.add-contact button:hover {
+  background: #007a63;
+}
